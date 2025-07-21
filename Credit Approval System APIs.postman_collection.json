@@ -70,6 +70,192 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:8000/check-eligibility",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer_id\": 1,\r\n  \"loan_amount\": 50000,\r\n  \"interest_rate\": 10,\r\n  \"tenure\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/check-eligibility",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"check-eligibility"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/check-eligibility",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer_id\": 1,\r\n  \"approval\": true,\r\n  \"interest_rate\": 10.0,\r\n  \"corrected_interest_rate\": 16.0,\r\n  \"tenure\": 12,\r\n  \"monthly_installment\": 5416.67\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/check-eligibility",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"check-eligibility"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/create-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer_id\": 1,\r\n  \"loan_amount\": 80000,\r\n  \"interest_rate\": 14,\r\n  \"tenure\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/create-loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"create-loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/create-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"loan_id\": null,\r\n  \"customer_id\": 1,\r\n  \"loan_approved\": false,\r\n  \"message\": \"Monthly EMIs exceed 50% of salary.\",\r\n  \"monthly_installment\": 5200.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/create-loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"create-loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/create-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"loan_id\": null,\r\n  \"customer_id\": 1,\r\n  \"loan_approved\": false,\r\n  \"message\": \"Existing loan + requested loan exceed approved limit.\",\r\n  \"monthly_installment\": 5125.0\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8000/create-loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"create-loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/create-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"loan_id\": null,\r\n  \"customer_id\": 1,\r\n  \"loan_approved\": false,\r\n  \"message\": \"Existing loan + requested loan exceed approved limit.\",\r\n  \"monthly_installment\": 5125.0\r\n}\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8000/create-loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"create-loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/create-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"loan_id\": null,\r\n  \"customer_id\": 99,\r\n  \"loan_approved\": false,\r\n  \"message\": \"Customer not found.\",\r\n  \"monthly_installment\": null\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/create-loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"create-loan"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
