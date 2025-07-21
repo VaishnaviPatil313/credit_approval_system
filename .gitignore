@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+*.sqlite3
+*.xlsx
+*.log
+*.zip
+.vscode/
+*.pdf
+db.sqlite3
+*.DS_Store
