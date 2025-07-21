@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "2a1fabfd-7035-49c2-9558-e5e91c6dfa8f",
+		"name": "Credit Approval System APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46943608",
+		"_collection_link": "https://lunar-module-saganist-97090012-4224318.postman.co/workspace/0c9314df-90ca-4b51-83b6-f3d658d02908/collection/46943608-2a1fabfd-7035-49c2-9558-e5e91c6dfa8f?action=share&source=collection_link&creator=46943608"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/view-loans/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"loan_id\":7798,\"loan_amount\":\"900000.00\",\"interest_rate\":\"17.92\",\"monthly_installment\":\"39978.00\",\"repayments_left\":94}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/view-loans/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"view-loans",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/view-loan/5930",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"loan_id\":5930,\"customer\":{\"id\":14,\"first_name\":\"Adaline\",\"last_name\":\"Diaz\",\"phone_number\":\"9519253076\",\"age\":65},\"loan_amount\":\"900000.00\",\"interest_rate\":\"8.20\",\"monthly_installment\":\"15344.00\",\"tenure\":129}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/view-loan/5930",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"view-loan",
+						"5930"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
